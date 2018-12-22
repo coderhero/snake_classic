@@ -1,1 +1,1 @@
-# snake_classic
+# Snake_Classic_Game
