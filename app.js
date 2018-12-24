@@ -16,5 +16,12 @@ document.onkeydown = function(event) {
 
 !function() {
   snake.unshift(n = snake[0] + direction);
-  
+  if (snake.indexOf(n, 1) > 0 || n < 0 || n > 399 || direction == 1
+&& n % 20 == 0 || direction == -1 && n % 20 == 19) {
+    return alert('Game is Over');
+  }
+  draw(n, 'lime');
+  if (n == food) {
+
+  }
 }
